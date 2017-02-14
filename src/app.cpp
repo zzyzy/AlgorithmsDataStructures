@@ -16,7 +16,7 @@ int main(int argc, const char *argv[])
         int status{p->Run()};
 
         if (status != 0)
-            std::cout << "Program exited with code " << status << std::endl;
+            std::cout << "Process finished with exit code " << status << std::endl;
         std::cout << std::endl;
     }
 
