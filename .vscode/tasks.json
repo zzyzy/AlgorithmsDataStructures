@@ -9,21 +9,16 @@
             "isShellCommand": true,
             "showOutput": "always",
             "args": [
-                "-w",
                 "-p",
                 "."
             ],
-            // "isBackground": true,
-            "problemMatcher": "$tsc-watch"
+            "problemMatcher": "$tsc"
         },
         {
             "taskName": "C++",
             "command": "make",
             "isShellCommand": true,
-            "showOutput": "always",
-            "args": [
-                "debug"
-            ]
+            "showOutput": "always"
         }
     ]
 }

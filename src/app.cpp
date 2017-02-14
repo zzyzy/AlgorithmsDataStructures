@@ -1,17 +1,24 @@
-#include "BST.h"
 #include <iostream>
+#include <vector>
+#include "programs/Programs.h"
 
 int main(int argc, const char *argv[])
 {
-    BST tree;
+    std::vector<IProgram *> programs;
 
-    tree.Insert(5);
-    tree.Insert(2);
-    tree.Insert(8);
-    tree.Insert(1);
-    tree.Insert(3);
+    programs.push_back(new BSTProgram{"Binary Search Tree"});
+    programs.push_back(new QuickSortProgram{"Quick Sort"});
 
-    tree.Display();
+    for (auto p : programs)
+    {
+        std::cout << p->Name << std::endl;
+
+        int status{p->Run()};
+
+        if (status != 0)
+            std::cout << "Program exited with code " << status << std::endl;
+        std::cout << std::endl;
+    }
 
     std::cin.get();
 

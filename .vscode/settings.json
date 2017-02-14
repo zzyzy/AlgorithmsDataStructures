@@ -5,8 +5,5 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/.DS_Store": true
-    },
-    "files.associations": {},
-    "C_Cpp.clang_format_formatOnSave": true,
-    "editor.formatOnType": true
+    }
 }

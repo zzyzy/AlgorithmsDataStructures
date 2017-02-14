@@ -1,4 +1,4 @@
-import { BST } from "./BST"
+import { BST } from "./data_structures/BST"
 
 let tree = new BST();
 

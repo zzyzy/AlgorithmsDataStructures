@@ -1,8 +1,11 @@
-# DataStructures
-Implementation of various data structures for learning
+# Algorithms & Data Structures
+Implementation of various algorithms and data structures for learning
 
 ## Building
-Open project folder with VSCode
+1. TypeScript
+    Open project folder with VSCode
+2. C++
+    Open project folder with VSCode or CLion
 
 ## Languages used
 * TypeScript

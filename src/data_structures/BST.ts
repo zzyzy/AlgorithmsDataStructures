@@ -1,3 +1,11 @@
+/*
+ * DataStructures
+ * Binary Search Tree (simple)
+ * https://en.wikipedia.org/wiki/Binary_search_tree
+ * 
+ * Written by Zhen Zhi Lee in TypeScript
+ */
+
 class BSTNode {
     public Data: number = 0;
     public Left: BSTNode = null;
@@ -41,6 +49,33 @@ export class BST {
                 parent.Right = current;
             }
         }
+    }
+
+    public Delete(value: number): void {
+        if (!this._root) return;
+
+        let parent = this._root;
+        let current = this._root;
+
+        while (current != null) {
+            if (value < current.Data) {
+                parent = current;
+                current = current.Left;
+            } else if (value == current.Data) {
+                return;
+            } else if (value > current.Data) {
+                parent = current;
+                current = current.Right;
+            }
+        }
+
+        if (current.Data < parent.Data) {
+            parent = parent.Left;
+        } else {
+            parent = parent.Right;
+        }
+
+        // TODO Handle deletion swap
     }
 
     public Display(): void {

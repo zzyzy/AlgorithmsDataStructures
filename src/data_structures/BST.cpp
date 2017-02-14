@@ -1,5 +1,5 @@
 /*
- * DataStructures
+ * Data Structures
  * Binary Search Tree (simple)
  * https://en.wikipedia.org/wiki/Binary_search_tree
  * 

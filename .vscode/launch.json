@@ -24,7 +24,7 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/bin/debug/app.out",
+            "program": "${workspaceRoot}/bin/app.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
@@ -59,7 +59,7 @@
             "name": "C++ Attach",
             "type": "cppdbg",
             "request": "attach",
-            "program": "${workspaceRoot}/bin/debug/app.out",
+            "program": "${workspaceRoot}/bin/app.out",
             "processId": "${command.pickProcess}",
             "linux": {
                 "MIMode": "gdb",
